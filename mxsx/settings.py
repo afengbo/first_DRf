@@ -101,7 +101,7 @@ DATABASES = {
     'ENGINE': 'django.db.backends.mysql',
     'NAME':'mxsx',
     'USER': 'root',
-    'PASSWORD': '333333',
+    'PASSWORD': 'nicai',
     'HOST': 'localhost',
     'PORT': '3306',
     'OPTIONS': {'init_command': 'SET storage_engine=INNODB;'}
