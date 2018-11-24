@@ -1,0 +1,153 @@
+2018-11-01 16:16:06 ERROR django.request 135 Internal Server Error: /social/complete/weibo/
+Traceback (most recent call last):
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\social_django\utils.py", line 49, in wrapper
+    return func(request, backend, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\social_django\views.py", line 33, in complete
+    *args, **kwargs)
+  File "E:\CKG2322-Vue+Django REST framework 打造生鲜电商项目\mxsx\extra_apps\social_core\actions.py", line 45, in do_complete
+    user = backend.complete(user=user, *args, **kwargs)
+  File "E:\CKG2322-Vue+Django REST framework 打造生鲜电商项目\mxsx\extra_apps\social_core\backends\base.py", line 40, in complete
+    return self.auth_complete(*args, **kwargs)
+  File "E:\CKG2322-Vue+Django REST framework 打造生鲜电商项目\mxsx\extra_apps\social_core\utils.py", line 259, in wrapper
+    return func(*args, **kwargs)
+  File "E:\CKG2322-Vue+Django REST framework 打造生鲜电商项目\mxsx\extra_apps\social_core\backends\oauth.py", line 388, in auth_complete
+    state = self.validate_state()
+  File "E:\CKG2322-Vue+Django REST framework 打造生鲜电商项目\mxsx\extra_apps\social_core\backends\oauth.py", line 88, in validate_state
+    raise AuthMissingParameter(self, 'state')
+social_core.exceptions.AuthMissingParameter: Missing needed parameter state
+2018-11-01 22:16:12 ERROR django.request 135 Internal Server Error: /userfavs/
+Traceback (most recent call last):
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\mixins.py", line 44, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "E:\CKG2322-Vue+Django REST framework 打造生鲜电商项目\mxsx\apps\user_operation\views.py", line 49, in get_serializer_class
+    b = 1/0
+ZeroDivisionError: division by zero
+2018-11-01 22:17:23 ERROR django.request 135 Internal Server Error: /userfavs/
+Traceback (most recent call last):
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\mixins.py", line 44, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "E:\CKG2322-Vue+Django REST framework 打造生鲜电商项目\mxsx\apps\user_operation\views.py", line 50, in get_serializer_class
+    b = a['a']
+KeyError: 'a'
+2018-11-02 07:40:59 WARNING django.request 152 Not Found: /hotsearchs/
+2018-11-02 07:41:07 WARNING django.request 152 Not Found: /media/images/201705/goods_img/53_P_1495068879687.jpg
+2018-11-02 07:41:14 ERROR django.request 135 Internal Server Error: /userfavs/
+Traceback (most recent call last):
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\mixins.py", line 44, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "E:\CKG2322-Vue+Django REST framework 打造生鲜电商项目\mxsx\apps\user_operation\views.py", line 50, in get_serializer_class
+    b = a['a']
+KeyError: 'a'
+2018-11-06 10:38:48 WARNING django.request 152 Not Found: /favicon.ico
+2018-11-06 10:42:15 ERROR django.request 135 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\request.py", line 76, in wrap_attributeerrors
+    yield
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\request.py", line 222, in user
+    self._authenticate()
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\request.py", line 375, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+AttributeError: 'DjangoModelPermissions' object has no attribute 'authenticate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 471, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 388, in initial
+    self.perform_authentication(request)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\views.py", line 314, in perform_authentication
+    request.user
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\request.py", line 222, in user
+    self._authenticate()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36-32\Lib\contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\request.py", line 80, in wrap_attributeerrors
+    six.reraise(type(exc), exc, info[2])
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\request.py", line 76, in wrap_attributeerrors
+    yield
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\request.py", line 222, in user
+    self._authenticate()
+  File "C:\Users\admin\Envs\mxsx\lib\site-packages\rest_framework\request.py", line 375, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+rest_framework.request.WrappedAttributeError: 'DjangoModelPermissions' object has no attribute 'authenticate'
