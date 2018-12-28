@@ -68,6 +68,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# 允许所有域名访问
 CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'mxsx.urls'
