@@ -22,9 +22,9 @@ class TwilioClass():
 
 if __name__ == "__main__":
     # Your Account SID from twilio.com/console
-    account_sid = "ACf46cd4e6b6a1da547b0c5b6e78faa37e"
+    account_sid = "ACf46cd4e6b6a1da547b0c5b6e78faa37efone"
     # Your Auth Token from twilio.com/console
-    auth_token = "ee53be0790ec48c9854f9eb7e1f3541a"
+    auth_token = "ee53be0790ec48c9854f9eb7e1f3541afone933"
     to = "+8618520849338"
     from_ = "+16825829138"
     twilio = TwilioClass(account_sid, auth_token, from_)
